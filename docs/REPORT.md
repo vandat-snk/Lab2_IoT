@@ -72,7 +72,7 @@ Giao diện đo suy luận server (YuNet detect + CNN run), RTT từ gửi ảnh
 
 Render Free chạy backend ONNX CPU, giao diện và file model đóng gói trong cùng Docker image. Camera là camera laptop của người truy cập trang. PostgreSQL là tùy chọn, không lưu ảnh.
 
-Bảng số đo cloud phải lấy từ CSV thực sau khi deploy và chạy camera/ảnh. Nếu chưa có URL cloud Live hoặc CSV browser, phần nghiệm thu local–cloud/toàn trình chưa hoàn tất. Không gọi benchmark localhost là cloud.
+Đã nghiệm thu bản cloud Live và thu CSV trình duyệt thật với đủ ba độ trễ. Xem số đo, URL và minh chứng tại mục 12; dữ liệu local được tách riêng.
 
 ## 8. Giới hạn và hướng cải thiện
 
@@ -88,7 +88,7 @@ Slide thầy cung cấp và bài báo Đàm Minh Lịnh và cộng sự (2023), 
 
 Đo 30 lượt ổn định và 1 warm-up trên **local Docker**, ảnh mẫu có 15 khuôn mặt. Mỗi lượt đều trả về ít nhất một khuôn mặt thuộc cả ba lớp. Suy luận trung bình 64.05 ms (P95 87.87 ms); RTT trung bình 85.09 ms (P95 114.87 ms).
 
-Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện sau khi cloud Live để lấy đủ ba độ trễ. Camera vật lý chưa được xác nhận.
+Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện cloud để lấy đủ ba độ trễ. Bản đo Docker này dùng ảnh mẫu, không đo khâu camera vật lý.
 
 ## 11. Kiểm tra giao diện và độ trễ toàn trình local
 
@@ -103,3 +103,25 @@ Các số trên là local Docker, chưa phải local–cloud. CLI không đo ph�
 CSV gốc: `artifacts/browser_local_latency.csv`.
 
 ![Giao diện và kết quả đo thực](../artifacts/browser_local_verified.jpg)
+
+## 12. Triển khai và nghiệm thu cloud
+
+Dịch vụ **Live** tại [https://iot-mask-cnn-lab3.onrender.com](https://iot-mask-cnn-lab3.onrender.com). Render Free, Singapore, Docker chạy ONNX CPU. Commit triển khai: `f2a0fce637753efde58b9202b1007a7b17cb329c`. Đã gọi `/api/health` thành công và tải lại file model từ cloud; SHA256 khớp chính xác model train GPU: `e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186`.
+
+Camera laptop được xử lý ở trình duyệt của người xem, khung hình gửi tới API cloud. Không lưu ảnh camera trên backend. PostgreSQL chưa cấu hình vì yêu cầu lab đã có CSV; mã nguồn hỗ trợ PostgreSQL tùy chọn.
+
+Đã đo 30 mẫu ổn định và 1 warm-up từ trình duyệt trên laptop tới Render, trên ảnh nhóm cố định. Ngưỡng phân loại 0.50. Tab ứng dụng được chọn khi đo. Cả 31 lượt đều nhận dạng đủ ba lớp trong cùng khung hình.
+
+| Local browser → Render | Trung bình (ms) | P95 (ms) |
+|---|---:|---:|
+| Suy luận cloud | 230.69 | 292.19 |
+| Phản hồi local–cloud | 428.59 | 492.80 |
+| Toàn trình trình duyệt | 461.07 | 528.30 |
+
+CSV gốc: `artifacts/browser_cloud_latency.csv`. Ảnh minh chứng:
+
+![Ứng dụng cloud và ba độ trễ thực](../artifacts/browser_cloud_verified.jpg)
+
+Thời gian toàn trình chịu ảnh hưởng của mã hóa JPEG, mạng, server và lịch vẽ trình duyệt. Giữ tab hiển thị khi đo. Có lưu một lượt đo chẩn đoán khi tab nằm nền tại `artifacts/browser_cloud_background_latency.csv`; không dùng lượt đó làm số đo tab ứng dụng phía trước. Các kết quả này dùng ảnh mẫu, chưa phải phép đo cảm biến camera hoặc nhóm người thật trên cloud.
+
+Đã quan sát webcam laptop hoạt động trên giao diện local và nhận dạng một khuôn mặt. Không đưa ảnh camera riêng lên repository. Minh chứng ba lớp đồng thời trên cloud dùng ảnh nhóm công khai; buổi demo thực tế cần bố trí nhóm người đủ ba trạng thái trước camera.

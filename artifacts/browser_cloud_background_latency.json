@@ -1,0 +1,22 @@
+{
+  "backend": "https://iot-mask-cnn-lab3.onrender.com",
+  "condition": "Measurement tab 1 behind selected Render dashboard tab 3; diagnostic background-tab run",
+  "classification_threshold": 0.62,
+  "steady_state_requests": 30,
+  "model_sha256": "e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186",
+  "inference_ms": {
+    "mean": 221.35974938670793,
+    "median": 219.43516936153173,
+    "p95": 297.07228764891624
+  },
+  "round_trip_ms": {
+    "mean": 411.0233333332464,
+    "median": 406.0,
+    "p95": 535.7999999988824
+  },
+  "end_to_end_ms": {
+    "mean": 2790.206666666642,
+    "median": 1500.300000000745,
+    "p95": 7231.0999999996275
+  }
+}

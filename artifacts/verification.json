@@ -11,10 +11,13 @@
   "docker_container_running": true,
   "all_three_classes_in_every_benchmark_frame": true,
   "benchmark_frames_including_warmup": 31,
-  "cloud_live_url": null,
-  "cloud_latency_measured": false,
+  "cloud_live_url": "https://iot-mask-cnn-lab3.onrender.com",
+  "cloud_latency_measured": true,
   "browser_end_to_end_measured": true,
-  "physical_webcam_tested": false,
-  "ui_verification_limit": "Browser UI and 30-sample timing verified in the in-app browser. Physical webcam and cloud are still pending.",
-  "browser_local_sample_ui_verified": true
+  "physical_webcam_tested": true,
+  "ui_verification_limit": "Browser image recognition and all three latency metrics verified locally and against Render. Physical laptop webcam was observed running locally with one detected face. Cloud benchmark uses a public group image; a real multi-person webcam scene has not been staged.",
+  "browser_local_sample_ui_verified": true,
+  "cloud_browser_end_to_end_measured": true,
+  "physical_webcam_local_observed": true,
+  "physical_webcam_cloud_tested": false
 }

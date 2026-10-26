@@ -2,6 +2,10 @@
 
 Hệ thống nhận dạng **nhiều khuôn mặt trong cùng một ảnh**, mỗi khuôn mặt thuộc một trong ba lớp: **đeo đúng**, **không đeo**, **đeo sai**. Dùng camera laptop hoặc tải ảnh. Backend FastAPI nhận ảnh, phát hiện khuôn mặt bằng CNN YuNet, phân loại từng khuôn mặt bằng CNN MobileNetV3-Small và trả về tọa độ, xác suất, số lượng cùng thời gian suy luận.
 
+**Bản cloud đang chạy:** [Mở MaskLab trên Render](https://iot-mask-cnn-lab3.onrender.com). [Thử API](https://iot-mask-cnn-lab3.onrender.com/docs) · [Tải một file model](https://iot-mask-cnn-lab3.onrender.com/api/model/download).
+
+Mở trang cloud, bấm **Bật camera laptop** và cho phép camera, hoặc **Ảnh mẫu 3 lớp**. Nút **Đo tự động 30 mẫu** thu số đo thật từ trình duyệt đến cloud; giữ tab hiển thị khi đo, sau đó **Xuất CSV**. Render Free có thể cần khởi động lại sau thời gian không dùng.
+
 ## Chạy bản đã có model
 
 Windows, Python 3.11–3.13:

@@ -58,7 +58,7 @@ def main():
         lines+=['','## 10. Kiểm tra triển khai local Docker','',
             f"Đã đạt {check['tests']['total']} kiểm tra, gồm ảnh nhóm thật nén JPEG chất lượng 88 với đủ ba lớp đúng theo IoU ≥ 0,5, batch 3/20 khuôn mặt, file model tải xuống và ảnh lỗi. Docker build thành công. Backend chạy với giới hạn {check['docker_memory_limit_bytes']/1024/1024:.0f} MiB RAM, đỉnh bộ nhớ đo được {check['docker_peak_memory_bytes']/1024/1024:.1f} MiB, không bị OOM.",
             '',f"Đo 30 lượt ổn định và 1 warm-up trên **local Docker**, ảnh mẫu có {json.loads((ROOT/'artifacts/demo_sample.json').read_text())['result']['face_count']} khuôn mặt. Mỗi lượt đều trả về ít nhất một khuôn mặt thuộc cả ba lớp. Suy luận trung bình {timing['inference_ms']['mean']:.2f} ms (P95 {timing['inference_ms']['p95']:.2f} ms); RTT trung bình {timing['round_trip_ms']['mean']:.2f} ms (P95 {timing['round_trip_ms']['p95']:.2f} ms).",
-            '', 'Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện sau khi cloud Live để lấy đủ ba độ trễ. Camera vật lý chưa được xác nhận.']
+            '', 'Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện cloud để lấy đủ ba độ trễ. Bản đo Docker này dùng ảnh mẫu, không đo khâu camera vật lý.']
     browser_latency=ROOT/'artifacts/browser_local_latency.json'
     if browser_latency.exists():
         browser=json.loads(browser_latency.read_text())
@@ -68,6 +68,25 @@ def main():
         for key,label in [('inference_ms','Suy luận backend'),('round_trip_ms','Phản hồi local–local'),('end_to_end_ms','Toàn trình trình duyệt')]:
             lines.append(f"| {label} | {browser[key]['mean']:.2f} | {browser[key]['p95']:.2f} |")
         lines+=['','CSV gốc: `artifacts/browser_local_latency.csv`.','', '![Giao diện và kết quả đo thực](../artifacts/browser_local_verified.jpg)']
+    cloud_path=ROOT/'artifacts/cloud_deployment.json'
+    cloud_timing_path=ROOT/'artifacts/browser_cloud_latency.json'
+    if cloud_path.exists():
+        cloud=json.loads(cloud_path.read_text())
+        lines+=['','## 12. Triển khai và nghiệm thu cloud','',
+            f"Dịch vụ **Live** tại [{cloud['url']}]({cloud['url']}). Render Free, Singapore, Docker chạy ONNX CPU. Commit triển khai: `{cloud['deployed_commit']}`. Đã gọi `/api/health` thành công và tải lại file model từ cloud; SHA256 khớp chính xác model train GPU: `{cloud['health']['model_sha256']}`.",
+            '', 'Camera laptop được xử lý ở trình duyệt của người xem, khung hình gửi tới API cloud. Không lưu ảnh camera trên backend. PostgreSQL chưa cấu hình vì yêu cầu lab đã có CSV; mã nguồn hỗ trợ PostgreSQL tùy chọn.']
+        if cloud_timing_path.exists():
+            timing=json.loads(cloud_timing_path.read_text())
+            lines+=['',f"Đã đo {timing['steady_state_requests']} mẫu ổn định và 1 warm-up từ trình duyệt trên laptop tới Render, trên ảnh nhóm cố định. Ngưỡng phân loại {timing['classification_threshold']:.2f}. Tab ứng dụng được chọn khi đo. Cả 31 lượt đều nhận dạng đủ ba lớp trong cùng khung hình.",
+                '', '| Local browser → Render | Trung bình (ms) | P95 (ms) |','|---|---:|---:|']
+            for key,label in [('inference_ms','Suy luận cloud'),('round_trip_ms','Phản hồi local–cloud'),('end_to_end_ms','Toàn trình trình duyệt')]:
+                lines.append(f"| {label} | {timing[key]['mean']:.2f} | {timing[key]['p95']:.2f} |")
+            lines+=['','CSV gốc: `artifacts/browser_cloud_latency.csv`. Ảnh minh chứng:','', '![Ứng dụng cloud và ba độ trễ thực](../artifacts/browser_cloud_verified.jpg)',
+                '', 'Thời gian toàn trình chịu ảnh hưởng của mã hóa JPEG, mạng, server và lịch vẽ trình duyệt. Giữ tab hiển thị khi đo. Có lưu một lượt đo chẩn đoán khi tab nằm nền tại `artifacts/browser_cloud_background_latency.csv`; không dùng lượt đó làm số đo tab ứng dụng phía trước. Các kết quả này dùng ảnh mẫu, chưa phải phép đo cảm biến camera hoặc nhóm người thật trên cloud.']
+            if verification.exists() and json.loads(verification.read_text()).get('physical_webcam_local_observed'):
+                lines+=['', 'Đã quan sát webcam laptop hoạt động trên giao diện local và nhận dạng một khuôn mặt. Không đưa ảnh camera riêng lên repository. Minh chứng ba lớp đồng thời trên cloud dùng ảnh nhóm công khai; buổi demo thực tế cần bố trí nhóm người đủ ba trạng thái trước camera.']
+            pending='Bảng số đo cloud phải lấy từ CSV thực sau khi deploy và chạy camera/ảnh. Nếu chưa có URL cloud Live hoặc CSV browser, phần nghiệm thu local–cloud/toàn trình chưa hoàn tất. Không gọi benchmark localhost là cloud.'
+            lines=[f"Đã nghiệm thu bản cloud Live và thu CSV trình duyệt thật với đủ ba độ trễ. Xem số đo, URL và minh chứng tại mục 12; dữ liệu local được tách riêng." if line==pending else line for line in lines]
     (ROOT/'docs/REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 

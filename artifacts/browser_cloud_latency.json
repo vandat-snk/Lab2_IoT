@@ -1,0 +1,32 @@
+{
+  "backend": "https://iot-mask-cnn-lab3.onrender.com",
+  "source": "Browser on laptop to Render Singapore, fixed public group photo",
+  "condition": "Cloud application tab selected at start and end, browser visible",
+  "steady_state_requests": 30,
+  "warmup_excluded": 1,
+  "classification_threshold": 0.5,
+  "model_sha256": "e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186",
+  "all_three_classes_every_frame": true,
+  "face_count": 15,
+  "inference_ms": {
+    "mean": 230.6872264792522,
+    "median": 234.54326577484608,
+    "p95": 292.18666069209576,
+    "min": 123.36891330778599,
+    "max": 298.89404587447643
+  },
+  "round_trip_ms": {
+    "mean": 428.5899999996647,
+    "median": 439.25,
+    "p95": 492.7999999988824,
+    "min": 360.40000000037253,
+    "max": 518.7999999988824
+  },
+  "end_to_end_ms": {
+    "mean": 461.0699999998634,
+    "median": 475.0,
+    "p95": 528.3000000007451,
+    "min": 383.90000000037253,
+    "max": 551.5
+  }
+}
