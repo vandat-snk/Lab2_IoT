@@ -89,9 +89,9 @@ Script CLI cố ý để `end_to_end_ms=null` vì không lấy ảnh webcam và 
 
 ## PostgreSQL tùy chọn
 
-Không cần database cho nhận dạng hoặc xuất CSV. Nếu cần lưu số đo, đặt biến môi trường `DATABASE_URL=postgresql://…?sslmode=require` ở Render; giữ bí mật mật khẩu và không commit `.env`. Khi backend báo có cấu hình, có thể chọn **Gửi số đo vào PostgreSQL** trên giao diện. Dữ liệu chỉ gồm ID, SHA256 model, thời gian, số lượng các lớp; không lưu ảnh.
+Cloud đã có PostgreSQL riêng `masklab-measurements` (database `masklab`), cùng vùng Singapore với backend. Gói Free hết hạn **25/11/2026**. Kết nối nội bộ được lưu trong biến môi trường `DATABASE_URL` của Render; không commit mật khẩu hoặc `.env`. Xem cách demo và giới hạn tại [docs/POSTGRESQL.md](docs/POSTGRESQL.md).
 
-Backend tạo bảng `lab_measurements` khi ghi lần đầu. Lỗi kết nối PostgreSQL không làm hỏng nhận dạng, nhưng log có cảnh báo. API trả `accepted` chỉ xác nhận nhận tác vụ ghi nền, không xác nhận database đã ghi. Để kiểm tra lưu thật, truy vấn PostgreSQL:
+Chọn **Gửi số đo vào PostgreSQL** sau khi giao diện báo kết nối thành công. Backend tạo bảng `lab_measurements` khi ghi lần đầu và chỉ trả `saved: true`, `record_id` sau khi commit. Giao diện hiện số bản ghi đã lưu trong phiên và ID mới nhất. Lỗi ghi trả HTTP 503; nhận dạng và xuất CSV vẫn hoạt động. Chỉ lưu ID, SHA256 model, ba độ trễ và số lượng từng lớp; không lưu ảnh/video. Để kiểm tra bằng SQL:
 
 ```sql
 SELECT created_at, inference_ms, round_trip_ms, end_to_end_ms, counts

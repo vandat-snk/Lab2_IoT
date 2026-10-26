@@ -37,7 +37,8 @@
     <article><div class="metric-label">02 <span>Phản hồi local ↔ backend</span></div><div class="metric-number"><strong id="rtt">—</strong><span>ms</span></div><p>Từ lúc gửi ảnh đến lúc nhận kết quả.<br>Bao gồm mạng và xử lý trên server.</p></article>
     <article><div class="metric-label">03 <span>Độ trễ toàn trình</span></div><div class="metric-number"><strong id="e2e">—</strong><span>ms</span></div><p>Từ lúc lấy khung hình đến khi vẽ kết quả.<br>Bao gồm mã hóa ảnh, gửi và hiển thị.</p></article></div>
     <div class="statistics"><span id="samples">0 mẫu ổn định</span><span>Toàn trình trung bình <b id="mean">—</b> ms</span><span>P95 <b id="p95">—</b> ms</span><span id="fps">— lượt/s</span><label><input type="checkbox" id="postgres"> Gửi số đo vào PostgreSQL (nếu đã cấu hình)</label><button id="clear" class="text-button">Xóa số đo</button></div>
-    <p class="footnote">Lần đầu sau kết nối được đánh dấu warm-up và loại khỏi thống kê ổn định. Khi địa chỉ backend là localhost, số đo là local–local. Chỉ xác nhận local–cloud khi backend thật nằm trên cloud.</p>
+    <p id="postgres-status" class="footnote" role="status" aria-live="polite">Đang kiểm tra PostgreSQL…</p>
+    <p class="footnote">Lần đầu sau kết nối được đánh dấu warm-up và loại khỏi thống kê ổn định. Khi địa chỉ backend là localhost, số đo là local–local. Chỉ xác nhận local–cloud khi backend thật nằm trên cloud. Ghi database diễn ra sau khi đo toàn trình.</p>
   </section>
 </main>
 <footer><span>MaskLab / Thực hành CNN & IoT</span><span>Nhận dạng ba lớp · Camera laptop · API trên cloud</span></footer>

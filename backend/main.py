@@ -9,12 +9,12 @@ import warnings
 import cv2
 import numpy as np
 from PIL import Image, UnidentifiedImageError
-from fastapi import BackgroundTasks, FastAPI, File, HTTPException, Query, UploadFile
+from fastapi import FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
-from .database import save_measurement
+from .database import database_available, save_measurement
 from .inference import ModelEngine
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -45,7 +45,7 @@ def health():
     if engine is None:raise HTTPException(503,'Chưa có model. Chạy huấn luyện và xuất model trước.')
     return {'status':'ok','model_sha256':engine.sha256,'labels':engine.meta['labels'],
             'architecture':engine.meta['architecture'],'execution_provider':'CPUExecutionProvider',
-            'database_configured':bool(os.getenv('DATABASE_URL'))}
+            'database_configured':bool(os.getenv('DATABASE_URL')),'database_available':database_available()}
 
 
 @app.get('/api/model-info')
@@ -100,13 +100,16 @@ class Measurement(BaseModel):
 
 
 @app.post('/api/measurements')
-def measurements(body:Measurement,background:BackgroundTasks):
+def measurements(body:Measurement):
     expected={'with_mask','without_mask','mask_weared_incorrect','uncertain'}
     if set(body.counts)!=expected or any(n<0 or n>100 for n in body.counts.values()):
         raise HTTPException(422,'Invalid counts')
-    if not os.getenv('DATABASE_URL'):return {'accepted':False,'reason':'PostgreSQL chưa cấu hình; vẫn có thể xuất CSV trên trình duyệt.'}
-    record=body.model_dump(mode='json');background.add_task(save_measurement,record)
-    return {'accepted':True,'detail':'Đã nhận để ghi PostgreSQL; accepted không xác nhận ghi thành công.'}
+    if not os.getenv('DATABASE_URL'):
+        raise HTTPException(503,'PostgreSQL chưa cấu hình; vẫn có thể xuất CSV trên trình duyệt.')
+    record_id=save_measurement(body.model_dump(mode='json'))
+    if record_id is None:
+        raise HTTPException(503,'Chưa ghi được PostgreSQL. Số đo vẫn còn trên trình duyệt để xuất CSV.')
+    return {'accepted':True,'saved':True,'record_id':record_id}
 
 
 @app.get('/')

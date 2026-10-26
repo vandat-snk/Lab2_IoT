@@ -5,7 +5,7 @@ const $ = id => document.getElementById(id);
 const labels = ['with_mask','without_mask','mask_weared_incorrect','uncertain'];
 const names = {with_mask:'Đeo đúng',without_mask:'Không đeo',mask_weared_incorrect:'Đeo sai',uncertain:'Chưa chắc chắn'};
 const colors = {with_mask:'#16b394',without_mask:'#f36e72',mask_weared_incorrect:'#efb63f',uncertain:'#a2b4bd'};
-const state = {base:'',stream:null,running:false,busy:false,connected:false,samples:[],warmup:true,model:null,generation:0,controller:null};
+const state = {base:'',stream:null,running:false,busy:false,connected:false,samples:[],warmup:true,model:null,generation:0,controller:null,savedCount:0};
 const canvas=$('result'),ctx=canvas.getContext('2d'),video=$('video');
 $('endpoint').value=localStorage.getItem('masklab-endpoint')||'';
 function notice(message,error=false){$('notice').textContent=message;$('notice').classList.toggle('error',error);}
@@ -23,8 +23,11 @@ async function connect(){
     const host=new URL(base).hostname;const local=['localhost','127.0.0.1','::1','[::1]'].includes(host);
     $('mode').textContent=local?'Đang đo local ↔ local':`Backend từ xa: ${host}`;
     notice(local?'Backend local sẵn sàng. Nhập URL cloud để đo đúng local–cloud.':'Backend từ xa đã kết nối. Bạn có thể bật camera hoặc chọn ảnh.');
-    $('postgres').disabled=!health.database_configured;
-    if(!health.database_configured)$('postgres').checked=false;
+    const databaseReady=health.database_available??health.database_configured;
+    $('postgres').disabled=!databaseReady;
+    if(!databaseReady)$('postgres').checked=false;
+    state.savedCount=0;
+    $('postgres-status').textContent=databaseReady?'PostgreSQL đã kết nối. Chọn gửi số đo để lưu các lần nhận dạng tiếp theo.':health.database_configured?'Chưa kết nối được PostgreSQL. Kiểm tra database rồi bấm Kết nối lại.':'Backend chưa cấu hình PostgreSQL. Bạn vẫn có thể xuất CSV.';
     try{const info=await fetch(base+'/api/model-info').then(r=>r.json());const report=info.evaluation?.classification_report;
       $('model-details').textContent=`${info.architecture}. Thiết bị train: ${info.evaluation?.device||'—'}. Test accuracy: ${report?(100*report.accuracy).toFixed(2)+'%':'—'}. Macro F1: ${report?report['macro avg']['f1-score'].toFixed(3):'—'}. Đánh giá trên ảnh cắt khuôn mặt; khả năng phát hiện camera cần kiểm tra riêng. SHA256: ${health.model_sha256.slice(0,16)}…`;
     }catch{$('model-details').textContent='Không tải được đánh giá model.';}
@@ -78,7 +81,16 @@ async function infer(cap,t0,generation){
       local_encode_and_render_ms:e2e-rtt,transport_and_http_overhead_ms:Math.max(0,rtt-result.timing.server_processing_ms),
       classification_threshold:threshold,detection_threshold:.7,face_count:result.face_count,...result.counts};
     state.samples.push(row);if(state.samples.length>10000)state.samples.shift();state.warmup=false;stats();
-    if($('postgres').checked){fetch(state.base+'/api/measurements',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({request_id:result.request_id,model_sha256:result.model_sha256,inference_ms:row.inference_ms,round_trip_ms:rtt,end_to_end_ms:e2e,counts:result.counts})}).catch(()=>notice('Nhận dạng thành công; chưa gửi được số đo PostgreSQL.',true));}
+    if($('postgres').checked){
+      $('postgres-status').textContent='Đang lưu số đo vào PostgreSQL…';
+      try{
+        const savedResponse=await fetch(state.base+'/api/measurements',{method:'POST',headers:{'Content-Type':'application/json'},signal:AbortSignal.timeout(10000),body:JSON.stringify({request_id:result.request_id,model_sha256:result.model_sha256,inference_ms:row.inference_ms,round_trip_ms:rtt,end_to_end_ms:e2e,counts:result.counts})});
+        const saved=await savedResponse.json();
+        if(!savedResponse.ok||!saved.saved)throw Error('Database chưa xác nhận ghi thành công.');
+        state.savedCount++;
+        $('postgres-status').textContent=`Đã lưu ${state.savedCount} số đo vào PostgreSQL trong phiên này. Bản ghi mới nhất: #${saved.record_id}.`;
+      }catch{$('postgres-status').textContent='Chưa lưu được số đo vào PostgreSQL. Số đo vẫn có thể xuất CSV.';}
+    }
     if(!state.running)notice(`Đã nhận dạng ${result.face_count} khuôn mặt. ${row.warmup?'Mẫu warm-up được tách khỏi thống kê ổn định.':''}`);
   }catch(e){if(e.name==='AbortError'){if(generation===state.generation){notice('Yêu cầu đã quá thời gian. Hãy kiểm tra backend và kết nối lại.',true);if(state.running)stop();}}else{notice('Nhận dạng thất bại: '+e.message,true);if(state.running)stop();}}
   finally{state.busy=false;$('processing').hidden=true;$('upload').disabled=false;}
