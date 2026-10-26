@@ -1,0 +1,43 @@
+{
+  "source_split": "held-out test source images",
+  "source_images": 127,
+  "iou_threshold": 0.5,
+  "detection_threshold": 0.7,
+  "classification_threshold": 0.5,
+  "ground_truth_faces": 546,
+  "predicted_faces": 495,
+  "detector_recall": 0.7802197802197802,
+  "detector_precision": 0.8606060606060606,
+  "per_class_end_to_end": {
+    "with_mask": {
+      "tp": 333,
+      "fp": 36,
+      "fn": 110,
+      "precision": 0.9024390243902439,
+      "recall": 0.7516930022573364,
+      "f1": 0.8201970443349754
+    },
+    "without_mask": {
+      "tp": 77,
+      "fp": 34,
+      "fn": 9,
+      "precision": 0.6936936936936937,
+      "recall": 0.8953488372093024,
+      "f1": 0.7817258883248731
+    },
+    "mask_weared_incorrect": {
+      "tp": 9,
+      "fp": 1,
+      "fn": 8,
+      "precision": 0.9,
+      "recall": 0.5294117647058824,
+      "f1": 0.6666666666666667
+    }
+  },
+  "macro_f1": 0.7561965331088384,
+  "three_class_natural_frames_found": 3,
+  "evaluation_seconds": 11.047273600000153,
+  "detector": "OpenCV YuNet CNN",
+  "detector_input_size": 640,
+  "note": "Greedy IoU matching on original full images. Ground truth excludes faces <12px, matching crop dataset protocol. False positives on excluded tiny faces may lower precision. This is not mAP. YuNet threshold selected on validation. Pipeline iterated after inspecting an SSD baseline on this test split, so final pipeline results are exploratory, not a completely untouched benchmark. CNN checkpoint selection uses validation only."
+}

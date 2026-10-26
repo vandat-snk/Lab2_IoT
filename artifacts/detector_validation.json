@@ -1,0 +1,33 @@
+{
+  "source_split": "val",
+  "source_images": 126,
+  "ground_truth_faces": 516,
+  "iou_threshold": 0.5,
+  "detector": "YuNet 2023mar",
+  "long_side": 640,
+  "selected_threshold": 0.7,
+  "observations": [
+    {
+      "threshold": 0.5,
+      "gt_matched": 444,
+      "predictions": 585,
+      "gt_recall": 0.8604651162790697,
+      "seconds": 26.9790575
+    },
+    {
+      "threshold": 0.7,
+      "gt_matched": 422,
+      "predictions": 484,
+      "gt_recall": 0.8178294573643411,
+      "seconds": 19.3283573
+    },
+    {
+      "threshold": 0.9,
+      "gt_matched": 140,
+      "predictions": 143,
+      "gt_recall": 0.2713178294573643,
+      "seconds": 18.1718832
+    }
+  ],
+  "method": "Per-ground-truth IoU hit diagnostics; not an official mAP or exclusive matching precision benchmark. 0.7 balances recall and false detections on validation."
+}

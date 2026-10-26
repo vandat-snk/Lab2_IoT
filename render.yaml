@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: iot-mask-cnn-lab3
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /api/health
+    autoDeployTrigger: off
+    envVars:
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: CORS_ORIGINS
+        value: "http://localhost:8000,http://127.0.0.1:8000,http://localhost:7860,http://127.0.0.1:7860"

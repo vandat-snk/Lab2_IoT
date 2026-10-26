@@ -1,0 +1,282 @@
+{
+  "source": "maksssksksss139.png",
+  "split": "test",
+  "type": "natural image, selected demonstration",
+  "result": {
+    "detections": [
+      {
+        "box": [
+          214,
+          157,
+          241,
+          191
+        ],
+        "face_confidence": 0.921047,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.980088,
+        "probabilities": {
+          "with_mask": 0.98008793592453,
+          "without_mask": 0.00795172993093729,
+          "mask_weared_incorrect": 0.011960376985371113
+        }
+      },
+      {
+        "box": [
+          4,
+          169,
+          33,
+          207
+        ],
+        "face_confidence": 0.908224,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.990102,
+        "probabilities": {
+          "with_mask": 0.9901024103164673,
+          "without_mask": 0.002896631136536598,
+          "mask_weared_incorrect": 0.007000874727964401
+        }
+      },
+      {
+        "box": [
+          190,
+          49,
+          211,
+          77
+        ],
+        "face_confidence": 0.902081,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.866043,
+        "probabilities": {
+          "with_mask": 0.8660426735877991,
+          "without_mask": 0.0383053794503212,
+          "mask_weared_incorrect": 0.09565192461013794
+        }
+      },
+      {
+        "box": [
+          38,
+          144,
+          63,
+          176
+        ],
+        "face_confidence": 0.899215,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.833529,
+        "probabilities": {
+          "with_mask": 0.8335286974906921,
+          "without_mask": 0.021891247481107712,
+          "mask_weared_incorrect": 0.14458005130290985
+        }
+      },
+      {
+        "box": [
+          288,
+          4,
+          314,
+          37
+        ],
+        "face_confidence": 0.898285,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.985094,
+        "probabilities": {
+          "with_mask": 0.9850938320159912,
+          "without_mask": 0.007874071598052979,
+          "mask_weared_incorrect": 0.007032058667391539
+        }
+      },
+      {
+        "box": [
+          31,
+          66,
+          52,
+          92
+        ],
+        "face_confidence": 0.893235,
+        "label": "without_mask",
+        "display_name": "Kh\u00f4ng \u0111eo",
+        "confidence": 0.931248,
+        "probabilities": {
+          "with_mask": 0.0300923939794302,
+          "without_mask": 0.9312481880187988,
+          "mask_weared_incorrect": 0.03865938261151314
+        }
+      },
+      {
+        "box": [
+          137,
+          184,
+          165,
+          219
+        ],
+        "face_confidence": 0.893177,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.935667,
+        "probabilities": {
+          "with_mask": 0.9356674551963806,
+          "without_mask": 0.0179868396371603,
+          "mask_weared_incorrect": 0.04634566232562065
+        }
+      },
+      {
+        "box": [
+          255,
+          7,
+          276,
+          34
+        ],
+        "face_confidence": 0.891266,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.985417,
+        "probabilities": {
+          "with_mask": 0.9854174852371216,
+          "without_mask": 0.0065549020655453205,
+          "mask_weared_incorrect": 0.008027574047446251
+        }
+      },
+      {
+        "box": [
+          102,
+          70,
+          126,
+          99
+        ],
+        "face_confidence": 0.885054,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.976071,
+        "probabilities": {
+          "with_mask": 0.9760713577270508,
+          "without_mask": 0.007675447966903448,
+          "mask_weared_incorrect": 0.016253139823675156
+        }
+      },
+      {
+        "box": [
+          56,
+          128,
+          77,
+          155
+        ],
+        "face_confidence": 0.88498,
+        "label": "mask_weared_incorrect",
+        "display_name": "\u0110eo sai",
+        "confidence": 0.843007,
+        "probabilities": {
+          "with_mask": 0.0219322070479393,
+          "without_mask": 0.13506066799163818,
+          "mask_weared_incorrect": 0.8430071473121643
+        }
+      },
+      {
+        "box": [
+          346,
+          28,
+          370,
+          55
+        ],
+        "face_confidence": 0.870434,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.996064,
+        "probabilities": {
+          "with_mask": 0.996063768863678,
+          "without_mask": 0.001601516385562718,
+          "mask_weared_incorrect": 0.0023346804082393646
+        }
+      },
+      {
+        "box": [
+          21,
+          31,
+          43,
+          60
+        ],
+        "face_confidence": 0.857295,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.983298,
+        "probabilities": {
+          "with_mask": 0.9832977056503296,
+          "without_mask": 0.00820621382445097,
+          "mask_weared_incorrect": 0.008496124297380447
+        }
+      },
+      {
+        "box": [
+          195,
+          138,
+          219,
+          167
+        ],
+        "face_confidence": 0.85434,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.965331,
+        "probabilities": {
+          "with_mask": 0.965331494808197,
+          "without_mask": 0.020320214331150055,
+          "mask_weared_incorrect": 0.01434826198965311
+        }
+      },
+      {
+        "box": [
+          183,
+          11,
+          204,
+          36
+        ],
+        "face_confidence": 0.830827,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.982898,
+        "probabilities": {
+          "with_mask": 0.9828976988792419,
+          "without_mask": 0.009963823482394218,
+          "mask_weared_incorrect": 0.007138451095670462
+        }
+      },
+      {
+        "box": [
+          95,
+          8,
+          115,
+          32
+        ],
+        "face_confidence": 0.741436,
+        "label": "with_mask",
+        "display_name": "\u0110eo \u0111\u00fang",
+        "confidence": 0.868568,
+        "probabilities": {
+          "with_mask": 0.8685680031776428,
+          "without_mask": 0.013640874065458775,
+          "mask_weared_incorrect": 0.11779111623764038
+        }
+      }
+    ],
+    "counts": {
+      "with_mask": 13,
+      "without_mask": 1,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "face_count": 15,
+    "image": {
+      "width": 400,
+      "height": 225
+    },
+    "timing": {
+      "inference_ms": 202.14619999933348,
+      "face_detection_ms": 64.50289999975212,
+      "cnn_ms": 137.64329999958136,
+      "queue_ms": 0.012600000445672777
+    },
+    "model_sha256": "e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186"
+  }
+}

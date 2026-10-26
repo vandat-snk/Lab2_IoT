@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+docs/licenses/*.txt -whitespace
+*.bundle binary
+*.onnx binary
+*.png binary
+*.jpg binary

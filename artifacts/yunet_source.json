@@ -1,0 +1,5 @@
+{
+  "revision": "f12e12798e8314f7c074a6656816c048dcc95b7a",
+  "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+  "source": "https://github.com/opencv/opencv_zoo/tree/f12e12798e8314f7c074a6656816c048dcc95b7a/models/face_detection_yunet"
+}

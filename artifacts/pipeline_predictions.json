@@ -1,0 +1,4177 @@
+[
+  {
+    "source": "maksssksksss479.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6873636183296965
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss762.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7148375369234264
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss415.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7233333333333334
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss126.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7743073047858942
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss2.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "mask_weared_incorrect",
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.7872648335745297
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8485714285714285
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6179952644041041
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6217765042979942
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss780.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5744827586206896
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7587548638132295
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss711.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 7,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 7,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6585034013605442
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8326693227091634
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6646884272997032
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7123287671232876
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5789473684210527
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6339622641509434
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5117845117845118
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss144.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8288288288288288
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.76
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7582417582417582
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss20.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 0,
+    "correct_classes_found": [],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": []
+  },
+  {
+    "source": "maksssksksss412.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6779992662345603
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7495209416917602
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss290.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6591549295774648
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.721030042918455
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7992125984251969
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6366723259762309
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss417.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.737017310252996
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss788.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 5,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8221528861154446
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6132930513595166
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6639344262295082
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8105263157894737
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.656957928802589
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss520.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.692588092345079
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss719.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5507042253521127
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8534906588003933
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5921052631578947
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss650.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5181674565560821
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss341.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5083150298085974
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss635.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6949995173279274
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss847.png",
+    "ground_truth_faces": 19,
+    "predicted_faces": 18,
+    "correct_classes_found": [
+      "mask_weared_incorrect",
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 13,
+      "without_mask": 4,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6647727272727273
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7696793002915452
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5982742090124641
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6616438356164384
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6666666666666666
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7619047619047619
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6702127659574468
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.7286624203821656
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.613722998729352
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.695364238410596
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7126760563380282
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6787330316742082
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6303317535545023
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7457846952010376
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss352.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7363013698630136
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6526064464783128
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss713.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.713103448275862
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss330.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6593689632968448
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6258545680546923
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6829268292682927
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7433252427184466
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss763.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6281070745697896
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7147964250248262
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss692.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5938521332037806
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss13.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "mask_weared_incorrect",
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.768853464132434
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6810035842293907
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7125748502994012
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss737.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "mask_weared_incorrect",
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.6991596638655462
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8118081180811808
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6136986301369863
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5333333333333333
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss782.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 1
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6714422158548233
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "uncertain",
+        "iou": 0.7074829931972789
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss682.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7040605643496215
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6955177743431221
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6410891089108911
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7271214642262895
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.511302475780409
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss199.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7711864406779662
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss349.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.603273577552611
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss536.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.700151007813013
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss777.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 7,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 6,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5901426718547341
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7394957983193278
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6857142857142857
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.695067264573991
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.720152817574021
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6361256544502618
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7588443396226415
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss686.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6420545746388443
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss630.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": []
+  },
+  {
+    "source": "maksssksksss289.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7835010060362173
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss373.png",
+    "ground_truth_faces": 13,
+    "predicted_faces": 12,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 10,
+      "without_mask": 2,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.757773879763993
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8103896103896104
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.72090112640801
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6974358974358974
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7707687004481213
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5715040972772931
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7846153846153846
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6219839142091153
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7104700854700855
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5789473684210527
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6590909090909091
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.65
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss155.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5674102812803103
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7009760425909495
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss779.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6120777891504606
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5749128919860628
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7221884498480243
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6773399014778325
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "without_mask",
+        "iou": 0.7157894736842105
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss591.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6381226842321943
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss14.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7387529597474349
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss139.png",
+    "ground_truth_faces": 19,
+    "predicted_faces": 15,
+    "correct_classes_found": [
+      "mask_weared_incorrect",
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 13,
+      "without_mask": 1,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6923076923076923
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6910246227164416
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6437659033078881
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5506607929515418
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7703703703703704
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.773286467486819
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.736328125
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6794117647058824
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.6245353159851301
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.637910085054678
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6666666666666666
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7346938775510204
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6819407008086253
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6936416184971098
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5806451612903226
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss638.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6115591397849462
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5672702269080908
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss465.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5651203175390722
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss688.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6588049004083674
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss674.png",
+    "ground_truth_faces": 17,
+    "predicted_faces": 15,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 14,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7887323943661971
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.706140350877193
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6257668711656442
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7329286798179059
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6612244897959184
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6832191780821918
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6384976525821596
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7004608294930875
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6363636363636364
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5797546012269938
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6333333333333333
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8095238095238095
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5534591194968553
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss294.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7407407407407407
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6855670103092784
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6774193548387096
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss784.png",
+    "ground_truth_faces": 9,
+    "predicted_faces": 9,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 8,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7351598173515982
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7399103139013453
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7129262490087233
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.75
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7650273224043715
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6841216216216216
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6517241379310345
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6347607052896725
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5412445730824892
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss528.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7378190255220418
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss450.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7917525773195876
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8250904704463209
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7292817679558011
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7112970711297071
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss9.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8367816091954023
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss351.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7349881093935791
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss743.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7166824399896756
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss691.png",
+    "ground_truth_faces": 11,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 5,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6843267108167771
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7065217391304348
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6422454804947669
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6885758998435054
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss42.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 6,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 6,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7018460466736329
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7242549981139192
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6511627906976745
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6785073555794762
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7005021520803444
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6339622641509434
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss694.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6736526946107785
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss463.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5638348362600855
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss456.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6954397394136808
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss622.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6824925816023739
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7131147540983607
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6936522539098436
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7669014084507042
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss722.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 8,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7741935483870968
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.732824427480916
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7247386759581882
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.597444089456869
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7506172839506173
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss105.png",
+    "ground_truth_faces": 9,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 8,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6048298572996706
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6542056074766355
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5562913907284768
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7222222222222222
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5306681270536692
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6536885245901639
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss204.png",
+    "ground_truth_faces": 7,
+    "predicted_faces": 7,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 7,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7821330902461258
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6494490358126722
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5566957414058491
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6536964980544747
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7380688124306326
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss304.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6535405872193437
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss166.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 5,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6382978723404256
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss348.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7408405172413793
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss603.png",
+    "ground_truth_faces": 20,
+    "predicted_faces": 13,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 13,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7046979865771812
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.625
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6470588235294118
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6707317073170732
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5342465753424658
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7164179104477612
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7088607594936709
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6842105263157895
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5092592592592593
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6554621848739496
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss513.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7331460674157303
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.872556684910086
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5714285714285714
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss44.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8655239441597455
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5983339369793553
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss247.png",
+    "ground_truth_faces": 13,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 6,
+      "without_mask": 2,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6947141316073355
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6406995230524642
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6189451022604952
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6739130434782609
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5328947368421053
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss305.png",
+    "ground_truth_faces": 12,
+    "predicted_faces": 12,
+    "correct_classes_found": [
+      "mask_weared_incorrect",
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 9,
+      "mask_weared_incorrect": 2,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7070707070707071
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "without_mask",
+        "iou": 0.8362369337979094
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8035714285714286
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.625
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7368421052631579
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.6470588235294118
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6575342465753424
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.5806451612903226
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "without_mask",
+        "iou": 0.5382165605095541
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6687898089171974
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6791044776119403
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "without_mask",
+        "iou": 0.5128205128205128
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss271.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7660576461867178
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss240.png",
+    "ground_truth_faces": 34,
+    "predicted_faces": 45,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 41,
+      "mask_weared_incorrect": 1,
+      "uncertain": 1
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7331536388140162
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8443708609271523
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8221343873517787
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7228915662650602
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7707509881422925
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8300395256916996
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8166666666666667
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8125
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6703910614525139
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7944444444444444
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7394366197183099
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7768924302788844
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7250996015936255
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7079207920792079
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7768924302788844
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8666666666666667
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7317073170731707
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7090909090909091
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6567164179104478
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8089887640449438
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8115942028985508
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6990291262135923
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7711864406779662
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.75
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "uncertain",
+        "iou": 0.625
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6626506024096386
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7409326424870466
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7422680412371134
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7567567567567568
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7338709677419355
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6666666666666666
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7536231884057971
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss489.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 6,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 6,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7003205128205128
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7058823529411765
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.68
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6435643564356436
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss730.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5806451612903226
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss297.png",
+    "ground_truth_faces": 12,
+    "predicted_faces": 12,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 10,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 1
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.81421647819063
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6880733944954128
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7613293051359517
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5867287543655413
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7403846153846154
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5714285714285714
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7345971563981043
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5454545454545454
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss832.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "mask_weared_incorrect"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 0,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.6069762725613466
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss336.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7529411764705882
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6496815286624203
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6345776031434185
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6797385620915033
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5852090032154341
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss559.png",
+    "ground_truth_faces": 15,
+    "predicted_faces": 12,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 9,
+      "without_mask": 3,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7983193277310925
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7466666666666667
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6716417910447762
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6810035842293907
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6381936887921654
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8321678321678322
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5014064697609001
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6779475982532751
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8842105263157894
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6265060240963856
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7105263157894737
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss727.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5805685723211497
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss242.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7060894051390355
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss282.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 6,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 1
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6756502663741774
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.691285081240768
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5431754874651811
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5934065934065934
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5716652858326429
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7774936061381074
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss519.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7109004739336493
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6666666666666666
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8028169014084507
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss617.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7122167319815982
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss224.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.745697896749522
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss283.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6555441882427009
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss326.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5944101397465064
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss605.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8544027898866609
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss72.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.696969696969697
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss668.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7070063694267515
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss84.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7662434652725915
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7778631821675634
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8067729083665338
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss643.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6081831958242129
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss37.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7852850652205775
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss611.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 1
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6776429809358753
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5573770491803278
+      },
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "uncertain",
+        "iou": 0.5375939849624061
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss43.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.75
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss69.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7401574803149606
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss807.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 7,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 7,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6753246753246753
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7070707070707071
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6924643584521385
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5892547660311959
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6031746031746031
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.672316384180791
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7196870925684485
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss802.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5217391304347826
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7213114754098361
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss563.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": []
+  },
+  {
+    "source": "maksssksksss75.png",
+    "ground_truth_faces": 10,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 8,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6845827439886846
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.75
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.645933014354067
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7531645569620253
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.59846547314578
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6177606177606177
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6131386861313869
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.660377358490566
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss218.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7668932427029188
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss595.png",
+    "ground_truth_faces": 6,
+    "predicted_faces": 6,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 6,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7445255474452555
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.64
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6460807600950119
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6153846153846154
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6310904872389791
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7563025210084033
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss174.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8066378066378066
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8035714285714286
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8029197080291971
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7953615279672579
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss754.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6947368421052632
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7775467775467776
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.815742397137746
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss377.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6909881914232443
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss505.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 0,
+    "correct_classes_found": [],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": []
+  },
+  {
+    "source": "maksssksksss822.png",
+    "ground_truth_faces": 14,
+    "predicted_faces": 12,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 6,
+      "without_mask": 6,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7222222222222222
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6416666666666667
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8888888888888888
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7627118644067796
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7572815533980582
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7142857142857143
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7619047619047619
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.506578947368421
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.819327731092437
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6292134831460674
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss273.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7925477128142987
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss278.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7656599552572707
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6724890829694323
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8076923076923077
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.72840790842872
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss594.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 8,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8333333333333334
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7468879668049793
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8179631114675221
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.668158090976883
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6885245901639344
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7058287795992714
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.75
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8173374613003096
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss841.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7362583189548928
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss112.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "mask_weared_incorrect"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 0,
+      "mask_weared_incorrect": 1,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "mask_weared_incorrect",
+        "predicted": "mask_weared_incorrect",
+        "iou": 0.5767790262172284
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss162.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7381578947368421
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss97.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8062015503875969
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss401.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 2,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7397622192866579
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6832946635730859
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6179540709812108
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss241.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.623212550326253
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss785.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 0,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7802197802197802
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss135.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7840909090909091
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7933902385642373
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss138.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7303634232121923
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7132647725291964
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5798262054864542
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss798.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.692167577413479
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6566678713408023
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss575.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 6,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6666666666666666
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8501594048884166
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7335680751173709
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6876790830945558
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss481.png",
+    "ground_truth_faces": 5,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 5,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.734982332155477
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5691699604743083
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6428571428571429
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7586206896551724
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6589861751152074
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss92.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 4,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 4,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8046346414073072
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5655526992287918
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6654343807763401
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6086065573770492
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss411.png",
+    "ground_truth_faces": 8,
+    "predicted_faces": 8,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 7,
+      "without_mask": 1,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6512605042016807
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6693300553165334
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.7241379310344828
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.8787878787878788
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.5847953216374269
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6147540983606558
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6333973128598849
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss300.png",
+    "ground_truth_faces": 1,
+    "predicted_faces": 1,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.669798027242837
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss478.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7198638036135977
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6345568335588633
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss347.png",
+    "ground_truth_faces": 3,
+    "predicted_faces": 3,
+    "correct_classes_found": [
+      "with_mask",
+      "without_mask"
+    ],
+    "counts": {
+      "with_mask": 1,
+      "without_mask": 2,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.8746355685131195
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6829634073185363
+      },
+      {
+        "truth": "without_mask",
+        "predicted": "without_mask",
+        "iou": 0.6581226186352616
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss439.png",
+    "ground_truth_faces": 4,
+    "predicted_faces": 5,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 3,
+      "without_mask": 2,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.75
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6275303643724697
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.6666666666666666
+      }
+    ]
+  },
+  {
+    "source": "maksssksksss731.png",
+    "ground_truth_faces": 2,
+    "predicted_faces": 2,
+    "correct_classes_found": [
+      "with_mask"
+    ],
+    "counts": {
+      "with_mask": 2,
+      "without_mask": 0,
+      "mask_weared_incorrect": 0,
+      "uncertain": 0
+    },
+    "matches": [
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.7561374795417348
+      },
+      {
+        "truth": "with_mask",
+        "predicted": "with_mask",
+        "iou": 0.647608125819135
+      }
+    ]
+  }
+]

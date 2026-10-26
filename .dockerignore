@@ -1,0 +1,10 @@
+.venv
+.git
+.env
+.cache
+data
+artifacts
+docs/source
+models/*.caffemodel
+models/*.prototxt
+tests

@@ -1,0 +1,22 @@
+{
+  "backend": "http://localhost:7860",
+  "steady_state_requests": 30,
+  "warmup_excluded": 1,
+  "image": "web/samples/three_classes.jpg",
+  "inference_ms": {
+    "mean": 64.04510689998233,
+    "median": 61.06624850002618,
+    "p95": 87.8738080000403,
+    "min": 47.9466130000219,
+    "max": 93.42361800008803
+  },
+  "round_trip_ms": {
+    "mean": 85.09178333333693,
+    "median": 80.08860000018103,
+    "p95": 114.87239999951271,
+    "min": 64.39979999959178,
+    "max": 126.4446000004682
+  },
+  "end_to_end_ms": null,
+  "note": "CLI measures inference and round trip only. Capture-to-painted-result must be measured/exported in the browser UI."
+}

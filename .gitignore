@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+data/raw/
+data/processed/
+artifacts/checkpoint.pt
+artifacts/classifier.onnx
+models/*.caffemodel
+models/*.prototxt
+models/*.onnx
+*.log
+*.part
+.cache/
+docs/source/

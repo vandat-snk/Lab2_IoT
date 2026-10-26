@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "classes": [
+    "with_mask",
+    "without_mask",
+    "mask_weared_incorrect"
+  ],
+  "image_size": 160,
+  "padding": 0.1,
+  "min_face_side": 12,
+  "split_method": "70/15/15 by source-image groups, RGB duplicates and dHash distance <=4 grouped before cropping",
+  "source_images": 851,
+  "source_groups": 836,
+  "counts": {
+    "train": {
+      "with_mask": 1935,
+      "without_mask": 401,
+      "mask_weared_incorrect": 81
+    },
+    "val": {
+      "with_mask": 416,
+      "without_mask": 83,
+      "mask_weared_incorrect": 17
+    },
+    "test": {
+      "with_mask": 443,
+      "without_mask": 86,
+      "mask_weared_incorrect": 17
+    }
+  },
+  "excluded_tiny_faces": {
+    "with_mask": 438,
+    "without_mask": 147,
+    "mask_weared_incorrect": 8
+  }
+}

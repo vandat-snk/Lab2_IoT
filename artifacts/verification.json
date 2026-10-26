@@ -1,0 +1,19 @@
+{
+  "tests": {
+    "core_suite_passed": 11,
+    "real_group_jpeg88_smoke_passed": 1,
+    "total": 12
+  },
+  "docker_build": "passed",
+  "docker_memory_limit_bytes": 536870912,
+  "docker_peak_memory_bytes": 170647552,
+  "docker_oom_killed": false,
+  "docker_container_running": true,
+  "all_three_classes_in_every_benchmark_frame": true,
+  "benchmark_frames_including_warmup": 31,
+  "cloud_live_url": null,
+  "cloud_latency_measured": false,
+  "browser_end_to_end_measured": false,
+  "physical_webcam_tested": false,
+  "ui_verification_limit": "Windows browser automation stopped because the current browser URL could not be verified. No further UI actions attempted."
+}

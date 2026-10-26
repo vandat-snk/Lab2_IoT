@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MaskLab · CNN & IoT Cloud</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header><a class="brand" href="/" aria-label="MaskLab trang chủ"><span class="brand-icon">M</span>MaskLab<span class="lab-tag">IoT · LAB 3</span></a><span class="connection" id="connection"><i></i>Chưa kết nối</span></header>
+<main>
+  <div class="heading"><div><p class="eyebrow">THỊ GIÁC MÁY TÍNH & ĐIỆN TOÁN ĐÁM MÂY</p><h1>Một khung hình.<br>Ba trạng thái khẩu trang.</h1><p class="subtitle">CNN phân loại từng khuôn mặt, cùng lúc nhiều người. Theo dõi kết quả và độ trễ thực tế.</p></div><div class="model-badge"><span class="network-mark">⌘</span><div><strong>MobileNetV3-Small</strong><span>CNN nhẹ · ONNX · 3 lớp</span></div></div></div>
+  <section class="settings" aria-label="Cấu hình kết nối">
+    <div class="endpoint"><label for="endpoint">ĐỊA CHỈ BACKEND</label><div class="input-row"><input id="endpoint" type="url" placeholder="Để trống để dùng backend hiện tại" autocomplete="off"><button id="connect" class="secondary">Kết nối</button></div></div>
+    <div class="threshold"><label for="threshold">NGƯỠNG PHÂN LOẠI <output id="threshold-value">50%</output></label><input id="threshold" type="range" min="0" max="95" value="50" aria-label="Ngưỡng phân loại"></div>
+    <div class="mode-info"><span id="mode">Backend hiện tại</span><small>Camera laptop → API → CNN → kết quả</small></div>
+  </section>
+  <div class="workspace">
+    <section class="camera-panel">
+      <div class="panel-top"><h2>Nguồn hình ảnh</h2><span id="source-status">Sẵn sàng</span></div>
+      <div class="viewer" id="viewer"><canvas id="result" aria-label="Khung hình và các khuôn mặt được nhận dạng"></canvas><video id="video" playsinline muted hidden></video>
+        <div class="empty" id="empty"><div class="camera-symbol">◎</div><h3>Mở camera để bắt đầu</h3><p>Hoặc chọn ảnh có nhiều người để kiểm tra cả ba lớp.</p><span>Đeo đúng <b>•</b> Không đeo <b>•</b> Đeo sai</span></div><div id="processing" class="processing" hidden>Đang nhận dạng…</div></div>
+      <div class="camera-actions"><button id="start" class="primary">◉ Bật camera laptop</button><button id="stop" class="secondary" disabled>Dừng</button><label class="upload secondary" for="upload">↑ Chọn ảnh<input type="file" id="upload" accept="image/jpeg,image/png,image/webp"></label><button id="sample" class="secondary">Ảnh mẫu 3 lớp</button><select id="camera-select" aria-label="Chọn camera"><option value="">Camera mặc định</option></select></div>
+      <p class="privacy">Chỉ gửi khung hình khi bạn bật nhận dạng hoặc chọn ảnh. Ảnh không được lưu trên backend.</p>
+      <div class="notice" id="notice" role="status">Kết nối backend, sau đó bật camera hoặc chọn ảnh.</div>
+    </section>
+    <aside class="results-panel"><div class="panel-top"><h2>Kết quả nhận dạng</h2><span id="face-total">0 khuôn mặt</span></div>
+      <div class="class-count correct"><span class="class-dot"></span><div><strong>Đeo đúng</strong><small>Che kín mũi và miệng</small></div><b id="count-correct">0</b></div>
+      <div class="class-count absent"><span class="class-dot"></span><div><strong>Không đeo</strong><small>Không có khẩu trang</small></div><b id="count-absent">0</b></div>
+      <div class="class-count incorrect"><span class="class-dot"></span><div><strong>Đeo sai</strong><small>Khẩu trang chưa đúng cách</small></div><b id="count-incorrect">0</b></div>
+      <p class="uncertain">Chưa chắc chắn: <strong id="count-uncertain">0</strong></p>
+      <div class="detected-list" id="detected-list"><p>Kết quả của từng khuôn mặt<br>sẽ xuất hiện ở đây.</p></div>
+      <details><summary>Thông tin model & đánh giá</summary><div id="model-details">Chưa tải thông tin model.</div></details>
+    </aside>
+  </div>
+  <section class="latency-section"><div class="section-title"><div><p class="eyebrow">ĐO TRÊN TỪNG KHUNG HÌNH</p><h2>Độ trễ local ↔ cloud</h2></div><div class="measurement-actions"><button id="benchmark" class="secondary">Đo tự động 30 mẫu</button><button id="export" class="secondary" disabled>↓ Xuất CSV</button></div></div>
+    <div class="metrics"><article><div class="metric-label">01 <span>Suy luận trên backend</span></div><div class="metric-number"><strong id="inference">—</strong><span>ms</span></div><p>Phát hiện khuôn mặt + chạy CNN.<br>Đo bằng đồng hồ của server.</p></article>
+    <article><div class="metric-label">02 <span>Phản hồi local ↔ backend</span></div><div class="metric-number"><strong id="rtt">—</strong><span>ms</span></div><p>Từ lúc gửi ảnh đến lúc nhận kết quả.<br>Bao gồm mạng và xử lý trên server.</p></article>
+    <article><div class="metric-label">03 <span>Độ trễ toàn trình</span></div><div class="metric-number"><strong id="e2e">—</strong><span>ms</span></div><p>Từ lúc lấy khung hình đến khi vẽ kết quả.<br>Bao gồm mã hóa ảnh, gửi và hiển thị.</p></article></div>
+    <div class="statistics"><span id="samples">0 mẫu ổn định</span><span>Toàn trình trung bình <b id="mean">—</b> ms</span><span>P95 <b id="p95">—</b> ms</span><span id="fps">— lượt/s</span><label><input type="checkbox" id="postgres"> Gửi số đo vào PostgreSQL (nếu đã cấu hình)</label><button id="clear" class="text-button">Xóa số đo</button></div>
+    <p class="footnote">Lần đầu sau kết nối được đánh dấu warm-up và loại khỏi thống kê ổn định. Khi địa chỉ backend là localhost, số đo là local–local. Chỉ xác nhận local–cloud khi backend thật nằm trên cloud.</p>
+  </section>
+</main>
+<footer><span>MaskLab / Thực hành CNN & IoT</span><span>Nhận dạng ba lớp · Camera laptop · API trên cloud</span></footer>
+<script src="/static/app.js"></script>
+</body></html>
