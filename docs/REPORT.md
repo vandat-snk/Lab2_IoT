@@ -88,4 +88,18 @@ Slide thầy cung cấp và bài báo Đàm Minh Lịnh và cộng sự (2023), 
 
 Đo 30 lượt ổn định và 1 warm-up trên **local Docker**, ảnh mẫu có 15 khuôn mặt. Mỗi lượt đều trả về ít nhất một khuôn mặt thuộc cả ba lớp. Suy luận trung bình 64.05 ms (P95 87.87 ms); RTT trung bình 85.09 ms (P95 114.87 ms).
 
-Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện sau khi cloud Live để lấy đủ ba độ trễ. Camera vật lý và thao tác UI trình duyệt chưa được kiểm tra tự động vì công cụ trình duyệt tự dừng khi không xác minh được URL hiện tại.
+Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện sau khi cloud Live để lấy đủ ba độ trễ. Camera vật lý chưa được xác nhận.
+
+## 11. Kiểm tra giao diện và độ trễ toàn trình local
+
+Đã chạy nút Đo tự động 30 mẫu trong trình duyệt trên ảnh nhóm công khai, gồm 1 warm-up và 30 mẫu ổn định. Cả 31 lần đều nhận dạng đủ ba lớp. Kiểm tra được hiển thị box, bộ đếm, ba số đo và nút xuất CSV. Đây là ảnh mẫu cố định, không phải webcam vật lý và không phải cloud.
+
+| Số đo trình duyệt local | Trung bình (ms) | P95 (ms) |
+|---|---:|---:|
+| Suy luận backend | 104.14 | 158.04 |
+| Phản hồi local–local | 148.26 | 227.30 |
+| Toàn trình trình duyệt | 171.79 | 255.30 |
+
+CSV gốc: `artifacts/browser_local_latency.csv`.
+
+![Giao diện và kết quả đo thực](../artifacts/browser_local_verified.jpg)

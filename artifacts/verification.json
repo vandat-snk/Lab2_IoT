@@ -13,7 +13,8 @@
   "benchmark_frames_including_warmup": 31,
   "cloud_live_url": null,
   "cloud_latency_measured": false,
-  "browser_end_to_end_measured": false,
+  "browser_end_to_end_measured": true,
   "physical_webcam_tested": false,
-  "ui_verification_limit": "Windows browser automation stopped because the current browser URL could not be verified. No further UI actions attempted."
+  "ui_verification_limit": "Browser UI and 30-sample timing verified in the in-app browser. Physical webcam and cloud are still pending.",
+  "browser_local_sample_ui_verified": true
 }

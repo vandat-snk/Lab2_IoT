@@ -58,7 +58,16 @@ def main():
         lines+=['','## 10. Kiểm tra triển khai local Docker','',
             f"Đã đạt {check['tests']['total']} kiểm tra, gồm ảnh nhóm thật nén JPEG chất lượng 88 với đủ ba lớp đúng theo IoU ≥ 0,5, batch 3/20 khuôn mặt, file model tải xuống và ảnh lỗi. Docker build thành công. Backend chạy với giới hạn {check['docker_memory_limit_bytes']/1024/1024:.0f} MiB RAM, đỉnh bộ nhớ đo được {check['docker_peak_memory_bytes']/1024/1024:.1f} MiB, không bị OOM.",
             '',f"Đo 30 lượt ổn định và 1 warm-up trên **local Docker**, ảnh mẫu có {json.loads((ROOT/'artifacts/demo_sample.json').read_text())['result']['face_count']} khuôn mặt. Mỗi lượt đều trả về ít nhất một khuôn mặt thuộc cả ba lớp. Suy luận trung bình {timing['inference_ms']['mean']:.2f} ms (P95 {timing['inference_ms']['p95']:.2f} ms); RTT trung bình {timing['round_trip_ms']['mean']:.2f} ms (P95 {timing['round_trip_ms']['p95']:.2f} ms).",
-            '', 'Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện sau khi cloud Live để lấy đủ ba độ trễ. Camera vật lý và thao tác UI trình duyệt chưa được kiểm tra tự động vì công cụ trình duyệt tự dừng khi không xác minh được URL hiện tại.']
+            '', 'Các số trên là local Docker, chưa phải local–cloud. CLI không đo phần lấy ảnh/vẽ trên trình duyệt nên không gán số giả cho toàn trình. Phải dùng nút Đo tự động 30 mẫu hoặc camera trên giao diện sau khi cloud Live để lấy đủ ba độ trễ. Camera vật lý chưa được xác nhận.']
+    browser_latency=ROOT/'artifacts/browser_local_latency.json'
+    if browser_latency.exists():
+        browser=json.loads(browser_latency.read_text())
+        lines+=['','## 11. Kiểm tra giao diện và độ trễ toàn trình local','',
+            'Đã chạy nút Đo tự động 30 mẫu trong trình duyệt trên ảnh nhóm công khai, gồm 1 warm-up và 30 mẫu ổn định. Cả 31 lần đều nhận dạng đủ ba lớp. Kiểm tra được hiển thị box, bộ đếm, ba số đo và nút xuất CSV. Đây là ảnh mẫu cố định, không phải webcam vật lý và không phải cloud.',
+            '', '| Số đo trình duyệt local | Trung bình (ms) | P95 (ms) |','|---|---:|---:|']
+        for key,label in [('inference_ms','Suy luận backend'),('round_trip_ms','Phản hồi local–local'),('end_to_end_ms','Toàn trình trình duyệt')]:
+            lines.append(f"| {label} | {browser[key]['mean']:.2f} | {browser[key]['p95']:.2f} |")
+        lines+=['','CSV gốc: `artifacts/browser_local_latency.csv`.','', '![Giao diện và kết quả đo thực](../artifacts/browser_local_verified.jpg)']
     (ROOT/'docs/REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 

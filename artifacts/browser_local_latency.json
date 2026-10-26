@@ -1,0 +1,21 @@
+{
+  "backend": "http://localhost:8000",
+  "source": "Browser UI, fixed public group image, 1 warm-up + 30 steady-state samples",
+  "model_sha256": "e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186",
+  "steady_state_requests": 30,
+  "inference_ms": {
+    "mean": 104.13690000016989,
+    "median": 103.72704999917914,
+    "p95": 158.03939999932481
+  },
+  "round_trip_ms": {
+    "mean": 148.26000000002483,
+    "median": 147.84999999962747,
+    "p95": 227.2999999988824
+  },
+  "end_to_end_ms": {
+    "mean": 171.7933333332961,
+    "median": 169.80000000074506,
+    "p95": 255.2999999988824
+  }
+}
