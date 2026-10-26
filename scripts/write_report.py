@@ -91,7 +91,7 @@ def main():
     if postgres_path.exists():
         postgres=json.loads(postgres_path.read_text())
         lines+=['','## 13. PostgreSQL cloud','',
-                f"PostgreSQL {postgres['postgresql_version']} trên Render Free, Singapore; database `masklab`, service `masklab-measurements`. Gói miễn phí hết hạn {postgres['expires_on']}. Chặn kết nối Internet; backend dùng mạng nội bộ Render. Chuỗi kết nối chỉ nằm trong Environment của backend.",
+                f"PostgreSQL {postgres['postgresql_version']} trên Render Free, Singapore; database `masklab`, service `masklab-measurements`. Gói miễn phí hết hạn {postgres['expires_on']}. Backend dùng mạng nội bộ Render; pgAdmin trên laptop chỉ được truy cập từ IP đã cho phép (/32), qua SSL. Không mở cho toàn Internet. Chuỗi kết nối của backend nằm trong Environment của Render.",
                 '',f"Đã thử từ giao diện cloud: bật gửi số đo, nhận dạng ảnh nhóm công khai với 15 khuôn mặt đủ ba lớp và ghi thành công bản ghi #{postgres['browser_record_id']}. API chỉ xác nhận thành công sau khi transaction commit. Bộ kiểm thử gồm ghi thật trên PostgreSQL Docker riêng và đọc lại bằng một kết nối khác; tổng 17 kiểm thử đạt.",
                 '', 'Bảng `lab_measurements` lưu thời điểm UTC, UUID yêu cầu, SHA256 model, ba độ trễ và counts JSONB. Không lưu ảnh, video, dataset hay file model. Việc ghi database xảy ra sau thời điểm kết thúc đo toàn trình. Trạng thái kết nối được kiểm tra thật; lỗi ghi được báo riêng và CSV vẫn dùng được.',
                 '', 'Minh chứng và hướng dẫn: [POSTGRESQL.md](POSTGRESQL.md), `artifacts/cloud_postgresql_verification.json`.',

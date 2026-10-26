@@ -1,0 +1,16 @@
+{
+  "verified_at_utc": "2026-10-26T11:54:04.948922+00:00",
+  "tool": "pgAdmin 4",
+  "registered_server": "Render MaskLab - Cloud",
+  "database": "masklab",
+  "schema": "public",
+  "table": "lab_measurements",
+  "sslmode": "require",
+  "external_access": "single approved laptop public IPv4 address (/32); other database sources denied",
+  "public_ip_recorded_in_repository": false,
+  "credentials_recorded_in_repository": false,
+  "query_verified": true,
+  "result_limit": 50,
+  "readonly_sql": "docs/DEMO_POSTGRESQL.sql",
+  "screenshot": "private local proof kept under ignored .cache, not published"
+}

@@ -128,7 +128,7 @@ Thời gian toàn trình chịu ảnh hưởng của mã hóa JPEG, mạng, serv
 
 ## 13. PostgreSQL cloud
 
-PostgreSQL 18 trên Render Free, Singapore; database `masklab`, service `masklab-measurements`. Gói miễn phí hết hạn 2026-11-25. Chặn kết nối Internet; backend dùng mạng nội bộ Render. Chuỗi kết nối chỉ nằm trong Environment của backend.
+PostgreSQL 18 trên Render Free, Singapore; database `masklab`, service `masklab-measurements`. Gói miễn phí hết hạn 2026-11-25. Backend dùng mạng nội bộ Render; pgAdmin trên laptop chỉ được truy cập từ IP đã cho phép (/32), qua SSL. Không mở cho toàn Internet. Chuỗi kết nối của backend nằm trong Environment của Render.
 
 Đã thử từ giao diện cloud: bật gửi số đo, nhận dạng ảnh nhóm công khai với 15 khuôn mặt đủ ba lớp và ghi thành công bản ghi #1. API chỉ xác nhận thành công sau khi transaction commit. Bộ kiểm thử gồm ghi thật trên PostgreSQL Docker riêng và đọc lại bằng một kết nối khác; tổng 17 kiểm thử đạt.
 

@@ -6,7 +6,7 @@
 - PostgreSQL: `masklab-measurements`, database `masklab`, PostgreSQL 18, cùng vùng Singapore.
 - Gói Free: 1 GB, hết hạn **25/11/2026**. Xuất CSV trước khi hết hạn; gói miễn phí không có backup tự động.
 - Backend đọc `DATABASE_URL` từ Environment của Render, dùng địa chỉ nội bộ. Không đưa chuỗi kết nối hoặc mật khẩu vào mã nguồn, ảnh minh chứng hay báo cáo.
-- Database chặn kết nối từ Internet; backend kết nối qua mạng nội bộ Render.
+- Backend kết nối qua mạng nội bộ Render. Để xem dữ liệu bằng pgAdmin trên laptop, đã cho phép duy nhất IP mạng hiện tại của laptop (`/32`), có xác nhận của chủ tài khoản; pgAdmin dùng SSL. Các địa chỉ khác vẫn bị chặn ở database.
 - PostgreSQL Docker `smartdoc-search-db-1` trên laptop thuộc dự án SmartDoc; ứng dụng cloud không sử dụng database đó.
 
 ## Dữ liệu được lưu
@@ -32,6 +32,16 @@ CSV vẫn được giữ trong trình duyệt khi PostgreSQL lỗi. Mẫu warm-u
 
 ## SQL minh họa khi đã kết nối bằng công cụ quản trị
 
+pgAdmin trên laptop đã đăng ký server **Render MaskLab - Cloud**, database **masklab**, và mở Query Tool đọc dữ liệu thật từ `public.lab_measurements`.
+Đường dẫn trong Object Explorer: **Servers → Render MaskLab - Cloud → Databases → masklab → Schemas → public → Tables → lab_measurements**.
+
+- Tab đang mở: `masklab/masklab_user@Render MaskLab - Cloud`.
+- Truy vấn trình diễn hiển thị 50 bản ghi mới nhất, giờ Việt Nam, ba độ trễ và số người đeo đúng/không đeo/đeo sai.
+- Nhấn **F5** hoặc **Execute script** để đọc lại sau khi app ghi thêm số đo. Bấm biểu tượng khôi phục góc phải Data Output nếu cần xem lại câu SQL.
+- Bộ truy vấn chỉ đọc được lưu tại [DEMO_POSTGRESQL.sql](DEMO_POSTGRESQL.sql).
+- Nếu đổi Wi-Fi/4G hoặc IP mạng thay đổi, cần cập nhật đúng IP mới trong Render; không dùng `0.0.0.0/0` cho quy tắc của database.
+- Giữ mật khẩu trong phần bí mật của Render/công cụ quản trị, không chụp hoặc đưa vào báo cáo.
+
 ```sql
 SELECT id, created_at, request_id, inference_ms, round_trip_ms, end_to_end_ms, counts
 FROM lab_measurements
@@ -46,7 +56,7 @@ FROM lab_measurements;
 ```
 
 Truy vấn AVG này gồm tất cả bản ghi, kể cả warm-up; dùng CSV để báo cáo kết quả ổn định theo phiên.
-Không mở truy cập database công khai chỉ để trình chiếu SQL.
+Chỉ cho phép IP cần thiết của người trình bày; không mở truy cập database cho toàn Internet để trình chiếu SQL.
 
 ## Kiểm tra trước buổi báo cáo
 
