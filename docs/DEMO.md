@@ -1,5 +1,7 @@
 # Kịch bản demo và nộp bài
 
+Kịch bản chi tiết theo từng thao tác và lời nói với thầy: [DEMO_THUYET_TRINH.md](DEMO_THUYET_TRINH.md).
+
 ## Chuẩn bị
 
 - Mở URL cloud và `/api/health` trước buổi demo, chờ dịch vụ khởi động xong.
