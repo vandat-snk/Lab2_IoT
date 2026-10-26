@@ -74,7 +74,7 @@ def main():
         cloud=json.loads(cloud_path.read_text())
         lines+=['','## 12. Triển khai và nghiệm thu cloud','',
             f"Dịch vụ **Live** tại [{cloud['url']}]({cloud['url']}). Render Free, Singapore, Docker chạy ONNX CPU. Commit triển khai: `{cloud['deployed_commit']}`. Đã gọi `/api/health` thành công và tải lại file model từ cloud; SHA256 khớp chính xác model train GPU: `{cloud['health']['model_sha256']}`.",
-            '', 'Camera laptop được xử lý ở trình duyệt của người xem, khung hình gửi tới API cloud. Không lưu ảnh camera trên backend. PostgreSQL chưa cấu hình vì yêu cầu lab đã có CSV; mã nguồn hỗ trợ PostgreSQL tùy chọn.']
+            '', 'Camera laptop được xử lý ở trình duyệt của người xem, khung hình gửi tới API cloud. Không lưu ảnh camera trên backend. PostgreSQL lưu số đo khi người dùng chọn gửi; xem cấu hình và nghiệm thu tại mục 13.' if cloud['health'].get('database_available') else 'PostgreSQL chưa kết nối; số đo vẫn xuất được CSV.']
         if cloud_timing_path.exists():
             timing=json.loads(cloud_timing_path.read_text())
             lines+=['',f"Đã đo {timing['steady_state_requests']} mẫu ổn định và 1 warm-up từ trình duyệt trên laptop tới Render, trên ảnh nhóm cố định. Ngưỡng phân loại {timing['classification_threshold']:.2f}. Tab ứng dụng được chọn khi đo. Cả 31 lượt đều nhận dạng đủ ba lớp trong cùng khung hình.",
@@ -87,6 +87,15 @@ def main():
                 lines+=['', 'Đã quan sát webcam laptop hoạt động trên giao diện local và nhận dạng một khuôn mặt. Không đưa ảnh camera riêng lên repository. Minh chứng ba lớp đồng thời trên cloud dùng ảnh nhóm công khai; buổi demo thực tế cần bố trí nhóm người đủ ba trạng thái trước camera.']
             pending='Bảng số đo cloud phải lấy từ CSV thực sau khi deploy và chạy camera/ảnh. Nếu chưa có URL cloud Live hoặc CSV browser, phần nghiệm thu local–cloud/toàn trình chưa hoàn tất. Không gọi benchmark localhost là cloud.'
             lines=[f"Đã nghiệm thu bản cloud Live và thu CSV trình duyệt thật với đủ ba độ trễ. Xem số đo, URL và minh chứng tại mục 12; dữ liệu local được tách riêng." if line==pending else line for line in lines]
+    postgres_path=ROOT/'artifacts/cloud_postgresql_verification.json'
+    if postgres_path.exists():
+        postgres=json.loads(postgres_path.read_text())
+        lines+=['','## 13. PostgreSQL cloud','',
+                f"PostgreSQL {postgres['postgresql_version']} trên Render Free, Singapore; database `masklab`, service `masklab-measurements`. Gói miễn phí hết hạn {postgres['expires_on']}. Chặn kết nối Internet; backend dùng mạng nội bộ Render. Chuỗi kết nối chỉ nằm trong Environment của backend.",
+                '',f"Đã thử từ giao diện cloud: bật gửi số đo, nhận dạng ảnh nhóm công khai với 15 khuôn mặt đủ ba lớp và ghi thành công bản ghi #{postgres['browser_record_id']}. API chỉ xác nhận thành công sau khi transaction commit. Bộ kiểm thử gồm ghi thật trên PostgreSQL Docker riêng và đọc lại bằng một kết nối khác; tổng 17 kiểm thử đạt.",
+                '', 'Bảng `lab_measurements` lưu thời điểm UTC, UUID yêu cầu, SHA256 model, ba độ trễ và counts JSONB. Không lưu ảnh, video, dataset hay file model. Việc ghi database xảy ra sau thời điểm kết thúc đo toàn trình. Trạng thái kết nối được kiểm tra thật; lỗi ghi được báo riêng và CSV vẫn dùng được.',
+                '', 'Minh chứng và hướng dẫn: [POSTGRESQL.md](POSTGRESQL.md), `artifacts/cloud_postgresql_verification.json`.',
+                '', '![Đã lưu số đo vào PostgreSQL cloud](../artifacts/postgresql_cloud_verified.jpg)']
     (ROOT/'docs/REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 

@@ -2,7 +2,8 @@
   "tests": {
     "core_suite_passed": 11,
     "real_group_jpeg88_smoke_passed": 1,
-    "total": 12
+    "total": 17,
+    "database_suite_passed": 5
   },
   "docker_build": "passed",
   "docker_memory_limit_bytes": 536870912,
@@ -19,5 +20,7 @@
   "browser_local_sample_ui_verified": true,
   "cloud_browser_end_to_end_measured": true,
   "physical_webcam_local_observed": true,
-  "physical_webcam_cloud_tested": false
+  "physical_webcam_cloud_tested": false,
+  "postgresql_cloud_connected": true,
+  "postgresql_cloud_browser_write_verified": true
 }

@@ -1,0 +1,31 @@
+{
+  "verified_at_utc": "2026-10-26T11:21:58.223568+00:00",
+  "backend_url": "https://iot-mask-cnn-lab3.onrender.com",
+  "service_name": "masklab-measurements",
+  "database_name": "masklab",
+  "postgresql_version": 18,
+  "provider": "Render",
+  "plan": "Free",
+  "region": "singapore",
+  "expires_on": "2026-11-25",
+  "external_connections_blocked": true,
+  "database_configured": true,
+  "database_available": true,
+  "browser_checkbox_enabled": true,
+  "browser_saved_count": 1,
+  "browser_record_id": 1,
+  "browser_source": "public_three_class_sample",
+  "browser_face_count": 15,
+  "browser_counts": {
+    "with_mask": 13,
+    "without_mask": 1,
+    "mask_weared_incorrect": 1,
+    "uncertain": 0
+  },
+  "acknowledgement": "record_id returned only after PostgreSQL commit",
+  "images_stored": false,
+  "runtime_commit": "f41ad315379b11ce7ec9dc9775ead36c090b9ac6",
+  "tests_passed": 17,
+  "local_postgresql_integration": "isolated PostgreSQL16 Docker container; insert and select on separate connections passed; container stopped",
+  "screenshot": "artifacts/postgresql_cloud_verified.jpg"
+}

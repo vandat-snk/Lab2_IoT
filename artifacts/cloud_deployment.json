@@ -4,10 +4,10 @@
   "plan": "free",
   "region": "singapore",
   "service_id": "srv-dbff2ue7bikc73dac4v0",
-  "deploy_id": "dep-dbff2uu7bikc73dac6c0",
-  "deployed_commit": "f2a0fce637753efde58b9202b1007a7b17cb329c",
+  "deploy_id": "dep-dbfhocivcj2c73871s1g",
+  "deployed_commit": "f41ad315379b11ce7ec9dc9775ead36c090b9ac6",
   "status": "live",
-  "verified_at_utc": "2026-10-26T06:24:59.044729+00:00",
+  "verified_at_utc": "2026-10-26T11:20:18.7266099Z",
   "health": {
     "status": "ok",
     "model_sha256": "e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186",
@@ -18,7 +18,8 @@
     ],
     "architecture": "MobileNetV3-Small CNN",
     "execution_provider": "CPUExecutionProvider",
-    "database_configured": false
+    "database_configured": true,
+    "database_available": true
   },
   "downloaded_model_bytes": 5860536,
   "model_download_sha256_verified": true

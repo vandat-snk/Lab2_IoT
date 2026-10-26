@@ -84,7 +84,7 @@ Slide thầy cung cấp và bài báo Đàm Minh Lịnh và cộng sự (2023), 
 
 ## 10. Kiểm tra triển khai local Docker
 
-Đã đạt 12 kiểm tra, gồm ảnh nhóm thật nén JPEG chất lượng 88 với đủ ba lớp đúng theo IoU ≥ 0,5, batch 3/20 khuôn mặt, file model tải xuống và ảnh lỗi. Docker build thành công. Backend chạy với giới hạn 512 MiB RAM, đỉnh bộ nhớ đo được 162.7 MiB, không bị OOM.
+Đã đạt 17 kiểm tra, gồm ảnh nhóm thật nén JPEG chất lượng 88 với đủ ba lớp đúng theo IoU ≥ 0,5, batch 3/20 khuôn mặt, file model tải xuống và ảnh lỗi. Docker build thành công. Backend chạy với giới hạn 512 MiB RAM, đỉnh bộ nhớ đo được 162.7 MiB, không bị OOM.
 
 Đo 30 lượt ổn định và 1 warm-up trên **local Docker**, ảnh mẫu có 15 khuôn mặt. Mỗi lượt đều trả về ít nhất một khuôn mặt thuộc cả ba lớp. Suy luận trung bình 64.05 ms (P95 87.87 ms); RTT trung bình 85.09 ms (P95 114.87 ms).
 
@@ -106,9 +106,9 @@ CSV gốc: `artifacts/browser_local_latency.csv`.
 
 ## 12. Triển khai và nghiệm thu cloud
 
-Dịch vụ **Live** tại [https://iot-mask-cnn-lab3.onrender.com](https://iot-mask-cnn-lab3.onrender.com). Render Free, Singapore, Docker chạy ONNX CPU. Commit triển khai: `f2a0fce637753efde58b9202b1007a7b17cb329c`. Đã gọi `/api/health` thành công và tải lại file model từ cloud; SHA256 khớp chính xác model train GPU: `e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186`.
+Dịch vụ **Live** tại [https://iot-mask-cnn-lab3.onrender.com](https://iot-mask-cnn-lab3.onrender.com). Render Free, Singapore, Docker chạy ONNX CPU. Commit triển khai: `f41ad315379b11ce7ec9dc9775ead36c090b9ac6`. Đã gọi `/api/health` thành công và tải lại file model từ cloud; SHA256 khớp chính xác model train GPU: `e759400d377df9e3a8df9f4ea759fe645a3377411a580e7356acbba934e3b186`.
 
-Camera laptop được xử lý ở trình duyệt của người xem, khung hình gửi tới API cloud. Không lưu ảnh camera trên backend. PostgreSQL chưa cấu hình vì yêu cầu lab đã có CSV; mã nguồn hỗ trợ PostgreSQL tùy chọn.
+Camera laptop được xử lý ở trình duyệt của người xem, khung hình gửi tới API cloud. Không lưu ảnh camera trên backend. PostgreSQL lưu số đo khi người dùng chọn gửi; xem cấu hình và nghiệm thu tại mục 13.
 
 Đã đo 30 mẫu ổn định và 1 warm-up từ trình duyệt trên laptop tới Render, trên ảnh nhóm cố định. Ngưỡng phân loại 0.50. Tab ứng dụng được chọn khi đo. Cả 31 lượt đều nhận dạng đủ ba lớp trong cùng khung hình.
 
@@ -125,3 +125,15 @@ CSV gốc: `artifacts/browser_cloud_latency.csv`. Ảnh minh chứng:
 Thời gian toàn trình chịu ảnh hưởng của mã hóa JPEG, mạng, server và lịch vẽ trình duyệt. Giữ tab hiển thị khi đo. Có lưu một lượt đo chẩn đoán khi tab nằm nền tại `artifacts/browser_cloud_background_latency.csv`; không dùng lượt đó làm số đo tab ứng dụng phía trước. Các kết quả này dùng ảnh mẫu, chưa phải phép đo cảm biến camera hoặc nhóm người thật trên cloud.
 
 Đã quan sát webcam laptop hoạt động trên giao diện local và nhận dạng một khuôn mặt. Không đưa ảnh camera riêng lên repository. Minh chứng ba lớp đồng thời trên cloud dùng ảnh nhóm công khai; buổi demo thực tế cần bố trí nhóm người đủ ba trạng thái trước camera.
+
+## 13. PostgreSQL cloud
+
+PostgreSQL 18 trên Render Free, Singapore; database `masklab`, service `masklab-measurements`. Gói miễn phí hết hạn 2026-11-25. Chặn kết nối Internet; backend dùng mạng nội bộ Render. Chuỗi kết nối chỉ nằm trong Environment của backend.
+
+Đã thử từ giao diện cloud: bật gửi số đo, nhận dạng ảnh nhóm công khai với 15 khuôn mặt đủ ba lớp và ghi thành công bản ghi #1. API chỉ xác nhận thành công sau khi transaction commit. Bộ kiểm thử gồm ghi thật trên PostgreSQL Docker riêng và đọc lại bằng một kết nối khác; tổng 17 kiểm thử đạt.
+
+Bảng `lab_measurements` lưu thời điểm UTC, UUID yêu cầu, SHA256 model, ba độ trễ và counts JSONB. Không lưu ảnh, video, dataset hay file model. Việc ghi database xảy ra sau thời điểm kết thúc đo toàn trình. Trạng thái kết nối được kiểm tra thật; lỗi ghi được báo riêng và CSV vẫn dùng được.
+
+Minh chứng và hướng dẫn: [POSTGRESQL.md](POSTGRESQL.md), `artifacts/cloud_postgresql_verification.json`.
+
+![Đã lưu số đo vào PostgreSQL cloud](../artifacts/postgresql_cloud_verified.jpg)
